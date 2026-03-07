@@ -34,30 +34,30 @@ let s:warning2="#e86310"
 "links
 hi! link SignColumn Normal
 hi! link FoldColumn Normal
-hi! link EndOfBuffer Normal
 hi! link Terminal Normal
 
-exe 'hi Normal guifg='s:fg' guibg='s:bg
+exe 'hi ColorColumn  guibg='s:bg2
 exe 'hi Cursor guifg='s:bg' guibg='s:fg
+exe 'hi CursorColumn  guibg='s:bg2
 exe 'hi CursorLine  guibg='s:bg2
 exe 'hi CursorLineNr  guifg='s:var
-exe 'hi CursorColumn  guibg='s:bg2
-exe 'hi ColorColumn  guibg='s:bg2
-exe 'hi LineNr guifg='s:bg3' guibg='s:bg
-exe 'hi VertSplit guifg='s:bg' guibg='s:bg3
-exe 'hi MatchParen guifg='s:warning2'  gui=underline'
-exe 'hi StatusLine guifg='s:fg2' guibg='s:bg3' gui=bold'
-exe 'hi Pmenu guifg='s:fg' guibg='s:bg2
-exe 'hi PmenuSel  guibg='s:bg3
-exe 'hi IncSearch guifg='s:bg' guibg='s:keyword
-exe 'hi Search   gui=underline'
 exe 'hi Directory guifg='s:const
 exe 'hi Folded guifg='s:fg4' guibg='s:bg
+exe 'hi LineNr guifg='s:bg3' guibg='s:bg
+exe 'hi MatchParen guifg='s:warning2'guibg=NONE'
+exe 'hi Normal guifg='s:fg' guibg='s:bg
+exe 'hi Pmenu guifg='s:fg' guibg='s:bg2
+exe 'hi PmenuSel  guibg='s:bg3
+exe 'hi StatusLine guifg='s:fg2' guibg='s:bg3' gui=bold'
+exe 'hi VertSplit guifg='s:bg' guibg='s:bg3
+hi CurSearch ctermfg=232 ctermbg=222 guifg=#07080d guibg=#fce094
+hi IncSearch term=bold,underline,reverse ctermfg=0 ctermbg=11 guifg=#eef1f8 guibg=#fce094
+hi Search ctermfg=255 ctermbg=58 guifg=#eef1f8 guibg=#6b5300
 
 exe 'hi Boolean guifg='s:const
 exe 'hi Character guifg='s:const
 exe 'hi Comment guifg='s:comment
-exe 'hi Conditional guifg='s:keyword
+exe 'hi Conditional guifg='s:keyword 'gui=NONE'
 exe 'hi Constant guifg='s:const
 exe 'hi Define guifg='s:keyword
 exe 'hi DiffAdd guifg=#fafafa guibg=#123d0f gui=bold'
@@ -69,7 +69,7 @@ exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2
 exe 'hi Float guifg='s:const
 exe 'hi Function guifg='s:func
 exe 'hi Identifier guifg='s:type
-exe 'hi Keyword guifg='s:keyword'  gui=bold'
+exe 'hi Keyword guifg='s:keyword 'gui=NONE'
 exe 'hi Label guifg='s:var
 exe 'hi NonText guifg='s:bg4' guibg='s:bg2
 exe 'hi Number guifg='s:const
@@ -90,15 +90,7 @@ exe 'hi Underlined   gui=underline'
 hi TabLine guifg=#a89984 guibg=#1c1c1c guisp=NONE gui=NONE
 hi TabLineFill guifg=#a3a3a3 guibg=#4a585c guisp=NONE gui=NONE
 hi TabLineSel guifg=#b1b1b1 guibg=#3c3836 guisp=NONE gui=bold ctermfg=230 ctermbg=234 cterm=bold term=bold,reverse
-
-" let s:bg="#112328"
-" let s:fg="#b1b1b1"
-" let s:fg2="#a3a3a3"
-" let s:fg3="#959595"
-" let s:fg4="#878787"
-" let s:bg2="#243539"
-" let s:bg3="#37464a"
-" let s:bg4="#4a585c"
+hi EndOfBuffer guifg=#3c1ca0 guibg=#112328 
 
 " Ruby Highlighting
 exe 'hi rubyAttribute guifg='s:builtin
