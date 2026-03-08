@@ -71,12 +71,12 @@ exe 'hi Function guifg='s:func
 exe 'hi Identifier guifg='s:type
 exe 'hi Keyword guifg='s:keyword 'gui=NONE'
 exe 'hi Label guifg='s:var
-exe 'hi NonText guifg='s:bg4' guibg='s:bg2
+exe 'hi NonText guifg='s:bg4' guibg='s:bg
 exe 'hi Number guifg='s:const
 exe 'hi Operater guifg='s:keyword |"make bold??
 exe 'hi PreProc guifg='s:keyword
 exe 'hi Special guifg='s:fg
-exe 'hi SpecialKey guifg='s:fg2' guibg='s:bg2
+exe 'hi SpecialKey guifg='s:bg4' guibg='s:bg
 exe 'hi Statement guifg='s:keyword 'gui=NONE'
 exe 'hi StorageClass guifg='s:type
 exe 'hi String guifg='s:str
