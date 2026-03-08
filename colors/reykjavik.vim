@@ -48,7 +48,7 @@ exe 'hi MatchParen guifg='s:warning2'guibg=NONE'
 exe 'hi Normal guifg='s:fg' guibg='s:bg
 exe 'hi Pmenu guifg='s:fg' guibg='s:bg2
 exe 'hi PmenuSel  guibg='s:bg3
-exe 'hi StatusLine guifg='s:fg2' guibg='s:bg3' gui=bold'
+exe 'hi StatusLine guifg='s:fg2' guibg='s:bg3' gui=NONE'
 exe 'hi VertSplit guifg='s:bg' guibg='s:bg3
 hi CurSearch ctermfg=232 ctermbg=222 guifg=#07080d guibg=#fce094
 hi IncSearch term=bold,underline,reverse ctermfg=0 ctermbg=11 guifg=#eef1f8 guibg=#fce094
@@ -73,24 +73,25 @@ exe 'hi Keyword guifg='s:keyword 'gui=NONE'
 exe 'hi Label guifg='s:var
 exe 'hi NonText guifg='s:bg4' guibg='s:bg2
 exe 'hi Number guifg='s:const
-exe 'hi Operater guifg='s:keyword
+exe 'hi Operater guifg='s:keyword |"make bold??
 exe 'hi PreProc guifg='s:keyword
 exe 'hi Special guifg='s:fg
 exe 'hi SpecialKey guifg='s:fg2' guibg='s:bg2
-exe 'hi Statement guifg='s:keyword
+exe 'hi Statement guifg='s:keyword 'gui=NONE'
 exe 'hi StorageClass guifg='s:type
 exe 'hi String guifg='s:str
 exe 'hi Tag guifg='s:keyword
 exe 'hi Title guifg='s:fg'  gui=bold'
-exe 'hi Todo guifg='s:fg2'  gui=inverse,bold'
-exe 'hi Type guifg='s:type
+" exe 'hi Todo guifg='s:fg2'  gui=inverse,bold'
+hi Todo guifg=#112328 guibg=#e1c9aa gui=bold
+exe 'hi Type guifg='s:type 'gui=NONE'
 exe 'hi Underlined   gui=underline'
 
 "updated section
 hi TabLine guifg=#a89984 guibg=#1c1c1c guisp=NONE gui=NONE
 hi TabLineFill guifg=#a3a3a3 guibg=#4a585c guisp=NONE gui=NONE
 hi TabLineSel guifg=#b1b1b1 guibg=#3c3836 guisp=NONE gui=bold ctermfg=230 ctermbg=234 cterm=bold term=bold,reverse
-hi EndOfBuffer guifg=#3c1ca0 guibg=#112328 
+hi EndOfBuffer guifg=#3c1ca0 guibg=#112328
 
 " Ruby Highlighting
 exe 'hi rubyAttribute guifg='s:builtin
