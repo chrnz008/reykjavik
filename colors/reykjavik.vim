@@ -64,7 +64,7 @@ exe 'hi DiffAdd guifg=#fafafa guibg=#123d0f gui=bold'
 exe 'hi DiffDelete guibg='s:bg2
 exe 'hi DiffChange  guibg=#151b3c guifg=#fafafa'
 exe 'hi DiffText guifg=#ffffff guibg=#ff0000 gui=bold'
-exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
+exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2
 exe 'hi Float guifg='s:const
 exe 'hi Function guifg='s:func
